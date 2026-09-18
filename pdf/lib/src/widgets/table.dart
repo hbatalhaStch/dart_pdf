@@ -457,9 +457,7 @@ class Table extends Widget with SpanningWidget {
             childY = totalHeight - child.box!.bottom - _getHeight(heightIndex);
             break;
           case TableCellVerticalAlignment.middle:
-            childY = totalHeight -
-                child.box!.bottom -
-                (_getHeight(heightIndex) + child.box!.height) / 2;
+            childY = totalHeight - child.box!.y - (_getHeight(heightIndex) + child.box!.height) / 2;
             break;
           case TableCellVerticalAlignment.top:
           case TableCellVerticalAlignment.full:
@@ -521,8 +519,7 @@ class Table extends Widget with SpanningWidget {
       for (final child in row.children) {
         context.canvas
           ..saveContext()
-          ..drawRect(child.box!.left, child.box!.bottom, child.box!.width,
-              child.box!.height)
+          ..drawRect(child.box!.x, child.box!.y, child.box!.width, child.box!.height)
           ..clipPath();
         child.paint(context);
         context.canvas.restoreContext();

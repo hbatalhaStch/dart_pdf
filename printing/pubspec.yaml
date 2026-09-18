@@ -8,7 +8,7 @@ repository: https://github.com/DavBfr/dart_pdf
 issue_tracker: https://github.com/DavBfr/dart_pdf/issues
 publish_to: none
 screenshots:
-  - description: 'Printing a document on iOS'
+  - description: "Printing a document on iOS"
     path: example.png
 topics:
   - pdf
@@ -16,14 +16,13 @@ topics:
   - print
   - printing
   - report
-version: 5.14.3
+version: 5.15.2
 
 environment:
-  sdk: ">=3.3.0 <4.0.0"
-  flutter: ">=3.22.0"
+  sdk: ">=3.12.0 <4.0.0"
+  flutter: ">=3.41.0"
 
 dependencies:
-  ffi: ">=1.1.0 <3.0.0"
   flutter:
     sdk: flutter
   flutter_web_plugins:
@@ -35,7 +34,7 @@ dependencies:
     git:
       url: https://github.com/hbatalhaStch/dart_pdf.git
       path: pdf
-  pdf_widget_wrapper: 
+  pdf_widget_wrapper:
     git:
       url: https://github.com/hbatalhaStch/dart_pdf.git
       path: widget_wrapper
@@ -43,7 +42,7 @@ dependencies:
   web: ^1.0.0
 
 dev_dependencies:
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
   flutter_test:
     sdk: flutter
   mockito: ^5.4.4
@@ -52,7 +51,7 @@ dependency_overrides:
   pdf:
     path: ../pdf
   pdf_widget_wrapper:
-   path: ../widget_wrapper
+    path: ../widget_wrapper
 
 flutter:
   plugin:

@@ -115,11 +115,13 @@ mixin TableHelper {
           ),
         );
       }
-      rows.add(TableRow(
-        children: tableRow,
-        repeat: true,
-        decoration: headerDecoration,
-      ));
+      rows.add(
+        TableRow(
+          children: tableRow,
+          repeat: true,
+          decoration: headerDecoration,
+        ),
+      );
       rowNum++;
     }
 
@@ -177,11 +179,13 @@ mixin TableHelper {
         decoration = headerDecoration;
       }
 
-      rows.add(TableRow(
-        children: tableRow,
-        repeat: rowNum < headerCount,
-        decoration: decoration,
-      ));
+      rows.add(
+        TableRow(
+          children: tableRow,
+          repeat: rowNum < headerCount,
+          decoration: decoration,
+        ),
+      );
       rowNum++;
     }
     return Table(
